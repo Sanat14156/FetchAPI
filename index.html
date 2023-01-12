@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-image: linear-gradient(blue, red);
+        padding: 10px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        transition: all;
+        transition-duration: 0.8s;
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+    div h1 {
+        text-transform: capitalize;
+        color: white;
+        /* flex-grow: 1; */
+    }
+
+    div:hover {
+        transform: scale(1.05);
+    }
+
+    div a {
+        position: relative;
+        top: 35px;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(213, 255, 3);
+
+
+    }
+
+    img {
+        border-radius: 10px;
+
+    }
+
+    div:hover a {
+        transition: all;
+        transition-duration: 1s;
+        border-bottom: 3px solid white;
+        top: 0px;
+
+
+    }
+
+    footer {
+        padding: 10px 10px;
+        margin-top: 30px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 30px;
+        background-color: rgb(142, 142, 142);
+        gap: 30px;
+        transition: all 2s;
+        width: 15%;
+
+
+    }
+
+    footer:hover {
+        width: 100%;
+
+    }
+
+    footer a {
+        background-color: rgb(253, 254, 254);
+
+
+
+        font-size: 22px;
+        text-decoration: none;
+        color: rgb(254, 254, 255);
+        display: none;
+
+
+
+    }
+
+    footer a:nth-of-type(1) {
+        background-image: url("https://img.icons8.com/windows/512/github.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+
+    }
+
+    footer a:nth-of-type(2) {
+        background-image: url("https://img.icons8.com/ios-filled/512/whatsapp.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+    }
+
+    footer:hover a {
+        display: block;
+
+    }
+</style>
+
+<body>
+    <section></section>
+    <footer><span>Sanat Kumar</span><a href="https://github.com/Sanat14156" target="_blank"></a><a
+            href="https://wa.me/+919650774852"></a></footer>
+</body>
+<script src="fetchapi.js">
+</script>
+
+</html>
